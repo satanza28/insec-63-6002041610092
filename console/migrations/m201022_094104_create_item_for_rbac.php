@@ -12,7 +12,7 @@ class m201022_094104_create_item_for_rbac extends Migration
      */
     public function safeUp()
     {
-    $auth =Yii::$app->authManager;
+    $auth = Yii::$app->authManager;
 
     $admin=$auth->createRole('admin');
     $admin->description ='Admin';
@@ -28,7 +28,7 @@ class m201022_094104_create_item_for_rbac extends Migration
 
         //print_r($auth);
         
-       // return false;
+       return true;
     }
 
     /**
